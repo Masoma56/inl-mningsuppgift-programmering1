@@ -1,0 +1,237 @@
+body{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.bokus {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#search {
+    font-size: 16px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 3px orangered;
+    margin-top: 35px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    background-color: white;
+}
+
+.grid-item1 {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.dropdown-button {
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: orange;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dropdown-content {
+    width: 300px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    padding: 16px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+    margin-left: -180px; 
+    margin-top: 15px; 
+}
+
+.show {
+    display: block;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'side top top'
+    'side bottom bottom'
+    'sum sum sum'
+    'footer footer footer';
+}
+
+.cart-content > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
+
+#basket {
+    width: 40px;
+    cursor: pointer;
+}
+
+.paragraph {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.topbar {
+    grid-area: top;
+}
+
+.bottombar {
+    grid-area: bottom;
+}
+
+.sumbar {
+    grid-area: sum;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatright2 {
+    float: right;
+}
+
+.foot {
+    grid-area: footer;
+}
+
+#image {
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+    padding: 4%;
+    color: white;
+}
+
+a:hover, a:focus {
+    color: black;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    background-color: antiquewhite;
+}
+
+.allbooks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.buy-button {
+    border-radius: 5px;
+    width: 124px;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover, .buy-button:focus {
+    background-color: orange;
+    color: white;
+}
+
+.container3 {
+    background-color: orangered;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+ #javascript {
+    display: none;
+}
+
+#html {
+    display: none;
+}
+
+#css {
+    display: none;
+}
+
+#javascriptbook-input{
+    width: 40px;
+}
+
+#htmlbook-input{
+    width: 40px;
+}
+
+#cssbook-input{
+    width: 40px;
+}
+
+.close-button {
+    border-radius: 5px;
+    width: 120px;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    float: left;
+}
+
+.close-button:hover, #close-button:focus {
+    background-color: orangered;
+    color: white;
+}
+
+.checkout-button {
+    border-radius: 5px;
+    width: 120px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+}
+
+.checkout-button:hover, #checkout-button:focus {
+    background-color: orange;
+    color: white;
+}
+
+
+
+
+
+

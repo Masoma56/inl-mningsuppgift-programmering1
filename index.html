@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping cart</title>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="grid-item1">
+            <h2 class="bokus">bokus</h2>
+        </div>
+        <div class="grid-item1"><input type="text" placeholder="Sök böcker" id="search"></div>
+        <div class="grid-item1">
+            <div class="dropdown">
+                <img src=".//images/shopping basket.png" alt="shopping basket" id="basket" onclick="openDropDownMenu()">
+                <button onclick="openDropDownMenu()" class="dropdown-button">Checkout</button>
+                <div id="dropdown" class="dropdown-content">
+                    <div id="javascript">
+                        <div class="cart-content">
+                            <div class="paragraph">
+                                <p>Your cart</p>
+                            </div>
+                            <div class="sidebar">
+                                <img src=".//images/javascript.png" id="image">
+                            </div>
+                            <div class="topbar">
+                                <strong>Javascript</strong>
+                            </div>
+                            <div class="bottombar">
+                                <div class="floatleft">
+                                    <label for="javascriptbook-input">
+                                        <input type="number" id="javascriptbook-input" value="1" min="0"
+                                            onchange="javascriptBookInput()">
+                                    </label><span id="total-price-of-javascript-book"></span>
+                                </div>
+                                <div class="floatright">
+                                    69 kr/p
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="html">
+                        <div class="cart-content">
+
+                            <div class="sidebar">
+                                <img src=".//images/html.jpg" id="image">
+                            </div>
+                            <div class="topbar">
+                                <strong>Html</strong>
+                            </div>
+                            <div class="bottombar">
+                                <div class="floatleft">
+                                    <label for="htmlbook-input">
+                                        <input type="number" id="htmlbook-input" value="1" min="0"
+                                            onchange="htmlBookInput()">
+                                    </label><span id="total-price-of-html-book"></span>
+                                </div>
+                                <div class="floatright">
+                                    59 kr/p
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="css">
+                        <div class="cart-content">
+                            <div class="sidebar">
+                                <img src=".//images/css.jpg" id="image">
+                            </div>
+                            <div class="topbar">
+                                <strong>Css</strong>
+                            </div>
+                            <div class="bottombar">
+                                <div class="floatleft">
+                                    <label for="cssbook-input">
+                                        <input type="number" id="cssbook-input" value="1" min="0"
+                                            onchange="cssBookInput()">
+                                    </label><span id="total-price-of-css-book"></span>
+                                </div>
+                                <div class="floatright">
+                                    49 kr/p
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="sumbar" id="sumbar">
+                        <strong>sum (<span id="sum-num-field"></span> books):
+
+                        </strong>
+                        <div class="floatright2">
+                            <span id="sum-num-field2"></span>
+                        </div>
+                        <br>
+                        <span id="sum-num-field3"></span>
+                    </div>
+                    <br>
+                    <div class="foot">
+                        <button onclick="closeMenu()" class="close-button">close</button>
+                        <button class="checkout-button">checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <nav>
+            <a href="#.html">Våra böcker</a>
+            <a href="#.html">Nyheter</a>
+            <a href="#.html">Topplistor</a>
+            <a href="#.html">Bokus Play</a>
+            <a href="#.html">Julklappar</a>
+            <a href="#.html">Erbjudanden</a>
+        </nav>
+    </div>
+    <div class="container2">
+        <div class="grid-item1"></div>
+        <div class="grid-item1">
+            <h2>Paperbacks</h2>
+            <div class="allbooks">
+                <div class="javascript-book"><img src=".//images/javascript.png"><br>
+                    JAVASCRIPT <br>
+                    David McFarland<br>
+                    69 kr<br>
+                    <button onclick="buyButtonJavascriptBook()" class="buy-button" id="buy-button1">buy</button>
+                </div>
+                <div class="htmlbook"><img src=".//images/html.jpg"><br>
+                    HTML <br>
+                    Jon Duckett<br>
+                    59 kr<br>
+                    <button onclick="buyButtonHtmlBook()" class="buy-button" id="buy-button2">buy</button>
+                </div>
+                <div class="htmlbook"><img src=".//images/css.jpg"><br>
+                    CSS <br>
+                    Joe Casabona<br>
+                    49 kr<br>
+                    <button onclick="buyButtonCssBook()" class="buy-button" id="buy-button3">buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item1"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
